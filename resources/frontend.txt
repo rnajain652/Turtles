@@ -1,7 +1,0 @@
-Web animation tools:
-GreenSock
-ScrollMagic
-Velocity.js
-Mo.js
-Anime.js
-Vivus
