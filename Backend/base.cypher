@@ -26,4 +26,19 @@ MATCH(n:Node {name:"Divide and Conquer"}) CREATE (m:Node {name:"Matrix multiplic
 MATCH(n:Node {name:"Arrays"}), (m:Node {name:"Multiplication for large numbers"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH(n:Node {name:"Arrays"}), (m:Node {name:"Medians using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH(n:Node {name:"2-D array"}), (m:Node {name:"Matrix multiplication using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Euclid's Algorithm for GCD"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Recursion"}), (m:Node {name:"Euclid's Algorithm for GCD"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Sieve of Eratosthenes"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Euclid's Algorithm for GCD"}) CREATE(m:Node {name:"Extended Euclid's Algorithm "}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Modular Exponentiation"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Recursion"}), (m:Node {name:"Modular Exponentiation"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Recursion"}), (m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Extended Euclid's Algorithm "}), (m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Euler’s Totient Function"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Euler’s Totient Function"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Factorial of large numbers"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Babylonian Method for square Root"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Russian Peasant multiplication"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Monte Carlo Simulations"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH (n) RETURN n
