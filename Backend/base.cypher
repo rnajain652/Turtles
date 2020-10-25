@@ -13,4 +13,17 @@ MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Preorder"}) CREATE 
 MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Inorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Postorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH(n:Node {name:"Stack"}) CREATE (m:Node {name:"Balanced Parentheses"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Root"}) CREATE (m:Node {name:"Divide and Conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"2-D array"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"2-D array"}) CREATE (m:Node {name:"Gaussian Elimination"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"2-D array"}) CREATE (m:Node {name:"Gauss Jordan Elimination"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Linear Search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Binary Search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Divide and Conquer"}), (m:Node {name:"Binary Search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Divide and Conquer"}) CREATE (m:Node {name:"Multiplication for large numbers"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Divide and Conquer"}) CREATE (m:Node {name:"Medians using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Divide and Conquer"}) CREATE (m:Node {name:"Matrix multiplication using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Arrays"}), (m:Node {name:"Multiplication for large numbers"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Arrays"}), (m:Node {name:"Medians using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"2-D array"}), (m:Node {name:"Matrix multiplication using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH (n) RETURN n
