@@ -41,4 +41,18 @@ MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Factorial of large num
 MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Babylonian Method for square Root"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Russian Peasant multiplication"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 MATCH(n:Node {name:"Number Theory"}) CREATE(m:Node {name:"Monte Carlo Simulations"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-MATCH (n) RETURN n
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Strings"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Strings"}) CREATE (m:Node {name:"Longest Common Substring"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Strings"}) CREATE (m:Node {name:"Longest Common Subsequence"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Strings"}) CREATE (m:Node {name:"Longest Palindromic Subsequence"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Strings"}) CREATE (m:Node {name:"Tries"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Linked List"}) CREATE (m:Node {name:"Graph"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Graph"}) MATCH (m:Node {name:"Tries"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"Substring search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Longest Common Substring"}) MATCH (m:Node {name:"Substring search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"KMP"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"Boyre Moore"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"Rabin Karp"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"Huffmann Encoding"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"LZW"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH (n) RETURN n;
