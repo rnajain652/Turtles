@@ -29,6 +29,9 @@ MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Basic implementions of Crypt
 
 MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Concepts of Dynamic Programming"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Concepts of Greedy"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
 MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"2-D array"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Linear Search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
@@ -37,7 +40,7 @@ MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Binary Search"}) CREATE (n)-
 
 MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Strings"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Multiplication for large numbers"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"karatsuba algorithm "}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Medians using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
@@ -88,11 +91,11 @@ MATCH(n:Node {name:"Pointers"}) CREATE (m:Node {name:"Structure"}) CREATE (n)-[r
 
 MATCH(n:Node {name:"Concepts of Divide and Conquer"}), (m:Node {name:"Binary Search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Concepts of Divide and Conquer"}), (m:Node {name:"Multiplication for large numbers"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Concepts of Divide and Conquer"}), (m:Node {name:"karatsuba algorithm "}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Concepts of Divide and Conquer"}), (m:Node {name:"Medians using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Concepts of Divide and Conquer"}) CREATE (m:Node {name:"Matrix multiplication using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Concepts of Divide and Conquer"}) CREATE (m:Node {name:"Strassen's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 //end of level 2
 
@@ -104,15 +107,17 @@ MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Kna
 
 MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Edit Distance"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Dijkstra's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-
 MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Bellman-Ford's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Floyd Warshal's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Kruskal's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-
 MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Prim's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+
+
+MATCH(n:Node {name:"Concepts of Greedy"}) CREATE (m:Node {name:"Kruskal's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Greedy"}) CREATE (m:Node {name:"Dijkstra's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 
 // level 3: stack to 4th level
@@ -131,7 +136,7 @@ MATCH(n:Node {name:"2-D array"}) CREATE (m:Node {name:"Gaussian Elimination"}) C
 
 MATCH(n:Node {name:"2-D array"}) CREATE (m:Node {name:"Gauss Jordan Elimination"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"2-D array"}), (m:Node {name:"Matrix multiplication using divide and conquer"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"2-D array"}), (m:Node {name:"Strassen's Algorithm"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 //level 3: strings to 4th level
 
@@ -192,6 +197,8 @@ MATCH(n:Node {name:"Trees"}) CREATE (m:Node {name:"Implementation for Disjoint S
 MATCH(n:Node {name:"Trees"}) CREATE (m:Node {name:"Cycles and their dection for graphs"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Trees"}) CREATE (m:Node {name:"Euler Tour"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Trees"}) CREATE (m:Node {name:"Heaps"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 //end of level 4
 
@@ -258,6 +265,40 @@ MATCH(n:Node {name:"Dijkstra's Algorithm"}), (m:Node {name:"Johnson's Algorithm 
 MATCH(n:Node {name:"Gaussian Elimination"}), (m:Node {name:"Kirchoff's Theorem"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Gauss Jordan Elimination"}), (m:Node {name:"Kirchoff's Theorem"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+
+
+//sorting algorithms
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Insertion Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Selection Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Bubble Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Merge Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Divide and Conquer"}), (m:Node {name:"Merge Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Recursion"}), (m:Node {name:"Merge Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Quick Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Divide and Conquer"}), (m:Node {name:"Quick Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Recursion"}), (m:Node {name:"Quick Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Heap Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Heaps"}), (m:Node {name:"Heap Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Counting Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Arrays"}) CREATE (m:Node {name:"Radix Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Counting Sort"}), (m:Node {name:"Radix Sort"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+
 
 
 
