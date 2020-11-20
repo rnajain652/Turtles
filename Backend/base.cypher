@@ -174,7 +174,7 @@ MATCH(n:Node {name:"Strings"}) CREATE (m:Node {name:"Manacher's Algorithm"}) CRE
 
 MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Fermat's Little Theorem"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Euclid's Algorithm for GCD"}) CREATE(m:Node {name:"Extended Euclid's Algorithm "}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Euler’s Totient Function"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
@@ -187,13 +187,6 @@ MATCH(n:Node {name:"Structure"}) CREATE (m:Node {name:"Linked List"}) CREATE (n)
 
 //start of level 4
 
-//level 4: tree traversals to 5th level
-
-MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Preorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-
-MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Inorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-
-MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Postorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 //level 4: linked list to 5th level
 
@@ -330,7 +323,6 @@ MATCH(n:Node {name:"Trees"}), (m:Node {name:"DP on trees"}) CREATE (n)-[r:Learn]
 
 MATCH(n:Node {name:"Matrix Exponentiation"}), (m:Node {name:"DP using Matrix Exponentiation"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Extended Euclid's Algorithm "}), (m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"Substring search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
