@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[11]:
+
+
 import bs4
 import requests
 import urllib, re
@@ -40,8 +46,18 @@ def estimate_reading_time(url):
 	total_words = count_words_in_text(filtered_text, WORD_LENGTH)
 	return total_words/WPM
 
+
+s=0
+
+ll=input().split(',')
+
+for url in ll:
+    s+=estimate_reading_time(url)
+print(s)
+
 # print(estimate_reading_time("https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/")+estimate_reading_time("https://www.interviewbit.com/courses/programming/topics/arrays/"))
 # print(estimate_reading_time("https://www.bitdegree.org/learn/c-plus-plus-vector"))
 # print(estimate_reading_time("https://www.interviewbit.com/courses/programming/topics/arrays/"))
-print(estimate_reading_time("https://www.hackerrank.com/contests/pep-interviewprep-9june/challenges/filters/page:1"))
+# print(estimate_reading_time("https://www.hackerrank.com/contests/pep-interviewprep-9june/challenges/filters/page:1"))
 # print(estimate_reading_time("https://www.codechef.com/LRNDSA02"))
+
