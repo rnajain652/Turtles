@@ -71,6 +71,12 @@ MATCH(n:Node {name:"Basics of Number Theory"}) CREATE(m:Node {name:"Russian Peas
 
 MATCH(n:Node {name:"Basics of Number Theory"}) CREATE(m:Node {name:"Monte Carlo Simulations"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
+MATCH(n:Node {name:"Basics of Number Theory"}) CREATE(m:Node {name:"Primality Tests"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Basics of Number Theory"}) CREATE(m:Node {name:"Sqrt-Decomposition"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Basics of Number Theory"}) CREATE(m:Node {name:"Matrix Exponentiation"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
 //Level 2: Recursion to 3rd level
 
 MATCH(n:Node {name:"Recursion"}), (m:Node {name:"Concepts of Dynamic Programming"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
@@ -104,6 +110,18 @@ MATCH(n:Node {name:"Concepts of Divide and Conquer"}) CREATE (m:Node {name:"Stra
 //Level 3: Dynamic programming to 4th level
 
 MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Knapsack"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Longest Increasing Subsequence"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Bitmask DP"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Sum over Subsets"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Bitmask DP"}), (m:Node {name:"Sum over Subsets"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"DP on trees"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"DP using Matrix Exponentiation"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Concepts of Dynamic Programming"}) CREATE (m:Node {name:"Edit Distance"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
@@ -156,7 +174,7 @@ MATCH(n:Node {name:"Strings"}) CREATE (m:Node {name:"Manacher's Algorithm"}) CRE
 
 MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Fermat's Little Theorem"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Euclid's Algorithm for GCD"}) CREATE(m:Node {name:"Extended Euclid's Algorithm "}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 MATCH(n:Node {name:"Euclid's Algorithm for GCD"}), (m:Node {name:"Euler’s Totient Function"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
@@ -169,13 +187,6 @@ MATCH(n:Node {name:"Structure"}) CREATE (m:Node {name:"Linked List"}) CREATE (n)
 
 //start of level 4
 
-//level 4: tree traversals to 5th level
-
-MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Preorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-
-MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Inorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
-
-MATCH(n:Node {name:"Tree Traversals"}) CREATE (m:Node {name:"Postorder"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
 //level 4: linked list to 5th level
 
@@ -304,7 +315,14 @@ MATCH(n:Node {name:"Counting Sort"}), (m:Node {name:"Radix Sort"}) CREATE (n)-[r
 
 MATCH(n:Node {name:"Bitwise Operators"}), (m:Node {name:"Fermat's Little Theorem"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
-MATCH(n:Node {name:"Extended Euclid's Algorithm "}), (m:Node {name:"Modular Multiplicative Inverse"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+MATCH(n:Node {name:"Bitwise Operators"}), (m:Node {name:"Russian Peasant Multiplication"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Bitwise Operators"}), (m:Node {name:"Bitmask DP"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Trees"}), (m:Node {name:"DP on trees"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
+MATCH(n:Node {name:"Matrix Exponentiation"}), (m:Node {name:"DP using Matrix Exponentiation"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
+
 
 MATCH(n:Node {name:"Tries"}) CREATE (m:Node {name:"Substring search"}) CREATE (n)-[r:Learn]-> (m) RETURN n, m, r;
 
